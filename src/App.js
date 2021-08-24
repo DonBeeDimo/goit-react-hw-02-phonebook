@@ -31,20 +31,6 @@ export default class App extends Component {
     }
   };
 
-  // formSubmitHandler = data => {
-  //   console.log(data);
-
-  //   const contact = {
-  //     id: shortid.generate(),
-  //     name: data.name,
-  //     number: data.number,
-  //   };
-
-  //   this.setState(({ contacts }) => ({
-  //     contacts: [contact, ...contacts],
-  //   }));
-  // };
-
   changeFilter = e => {
     this.setState({ filter: e.currentTarget.value });
   };
