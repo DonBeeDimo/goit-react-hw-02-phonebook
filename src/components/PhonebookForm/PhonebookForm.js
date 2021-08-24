@@ -14,7 +14,7 @@ export default class PhonebookForm extends Component {
   handleSubmit = e => {
     e.preventDefault();
 
-    this.props.onSubmit(this.state);
+    this.props.onAddContact({ ...this.state });
 
     this.reset();
   };
@@ -64,16 +64,3 @@ export default class PhonebookForm extends Component {
     );
   }
 }
-
-// export default function PhonebookForm({
-//   name,
-//   number,
-//   handleChange,
-//   handleSubmit,
-// }) {
-//   return (
-//     <div>
-
-//     </div>
-//   );
-// }
