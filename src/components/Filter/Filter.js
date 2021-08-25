@@ -11,6 +11,7 @@ export default function Filter({ value, onChangeFilter }) {
         type="text"
         value={value}
         onChange={onChangeFilter}
+        placeholder="Enter name"
       />
     </div>
   );
